@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>三轴云台控制方案 | 王晓东的个人网站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="项目简介：承担成都某公司三轴云台设计项目，负责研发基于IMU与电位器的三轴云台，包括硬件控制板设计、控制算法及结构设计。（设计的产品将于近期上市）本人职责：姿态解算算法设计、无刷电机控制算法设计、单片机上底层驱动及算法的代码实现研发时间：2014.11 - 2015.03">
+<meta property="og:type" content="article">
+<meta property="og:title" content="三轴云台控制方案">
+<meta property="og:url" content="crossing.xyz/2015/03/15/三轴云台控制方案/index.html">
+<meta property="og:site_name" content="王晓东的个人网站">
+<meta property="og:description" content="项目简介：承担成都某公司三轴云台设计项目，负责研发基于IMU与电位器的三轴云台，包括硬件控制板设计、控制算法及结构设计。（设计的产品将于近期上市）本人职责：姿态解算算法设计、无刷电机控制算法设计、单片机上底层驱动及算法的代码实现研发时间：2014.11 - 2015.03">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="三轴云台控制方案">
+<meta name="twitter:description" content="项目简介：承担成都某公司三轴云台设计项目，负责研发基于IMU与电位器的三轴云台，包括硬件控制板设计、控制算法及结构设计。（设计的产品将于近期上市）本人职责：姿态解算算法设计、无刷电机控制算法设计、单片机上底层驱动及算法的代码实现研发时间：2014.11 - 2015.03">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+   
+    <link rel="alternative" href="/atom.xml" title="王晓东的个人网站" type="application/atom+xml">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<div class="profilepic">
+			<img src="/images/20140513_135340.png">
+		</div>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">王晓东</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">热爱科幻和摄影的小码农</p>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/categories/work/">项目经历</a></li>
+				        
+							<li><a href="/social/">社会经历</a></li>
+				        
+							<li><a href="/honor/">个人荣誉</a></li>
+				        
+							<li><a href="/cv/">我的简历</a></li>
+				        
+							<li><a href="/about/">关于我</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+							 
+				              <a class="weibo" target="_blank" href="http://weibo.com/wangxiaodong3085" title="我的微博">
+							  </a>
+							
+							 
+					        
+							 
+                           	<a href="mailto:wangxiaodong3085@sina.cn" class="email" target="_blank" title="Email Me">
+							</a>
+							
+						</div>
+					</nav>
+				</section>
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay"></div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="/images/20140513_135340.png">
+			</div>
+			  <h1 class="header-author"><a href="/">王晓东</a></h1>
+			
+			<p class="header-subtitle">热爱科幻和摄影的小码农</p>
+			
+
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/categories/work/">项目经历</a></li>
+		        
+					<li><a href="/social/">社会经历</a></li>
+		        
+					<li><a href="/honor/">个人荣誉</a></li>
+		        
+					<li><a href="/cv/">我的简历</a></li>
+		        
+					<li><a href="/about/">关于我</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			
+			<nav class="header-nav">
+				<div class="social">
+					
+							 
+				              <a class="weibo" target="_blank" href="http://weibo.com/wangxiaodong3085" title="我的微博"></a>
+							
+							
+			        
+				    
+                           	<a href="mailto:wangxiaodong3085@sina.cn" class="email" target="_blank" title="Email Me"></a>
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <article id="post-三轴云台控制方案" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/03/15/三轴云台控制方案/" class="article-date">
+  	<time datetime="2015-03-15T14:25:06.000Z" itemprop="datePublished">Mar 15 2015</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/work/">work</a>
+  </div>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      三轴云台控制方案
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>项目简介：</strong>承担成都某公司三轴云台设计项目，负责研发基于IMU与电位器的三轴云台，包括硬件控制板设计、控制算法及结构设计。（设计的产品将于近期上市）<br><strong>本人职责：</strong>姿态解算算法设计、无刷电机控制算法设计、单片机上底层驱动及算法的代码实现<br><strong>研发时间：</strong>2014.11 - 2015.03<br><a id="more"></a></p>
+<h2 id="项目细节">项目细节</h2><p><strong>主控芯片：</strong>STM32F0<br><strong>研发平台：</strong>Keil<br><strong>传感器：</strong>MPU6500(IMU,惯性测量单元)、旋转电位器<br><strong>负载：</strong>无刷电机</p>
+<h2 id="个人贡献">个人贡献</h2><ol>
+<li>在STM32F0芯片集成陀螺仪、加速度计、电位器等传感器，实现SPI通讯、socket通讯及数据解析；</li>
+<li>搭建多线程数据处理的软件结构，实现基于svPWM的无刷云台电机控制；    </li>
+<li>设计实现基于IMU、电位器的传感器数据滤波器以及数据融合滤波器；</li>
+<li>设计并实现基于自适应Kalman滤波算法的惯性导航算法；</li>
+<li>负责PID控制算法设计，负责基于svPWM的无刷电机驱动算法设计；</li>
+<li>负责程序编写、代码Bug调试及PID参数调节；</li>
+<li>作为技术组组长，负责与甲方单位负责人协商项目进度，沟通技术要求细节，设定与甲方研发设备间的通讯协议；</li>
+<li>作为技术组组长，协助组内其他2位组员设计PCB电路图、执行飞行试验任务，协助结构设计组实现线路排布；</li>
+</ol>
+
+      
+    </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/03/18/多机器人协调控制与区域覆盖问题研究/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          地-空多机器人协调控制问题研究
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/03/14/四旋翼飞行器容错控制及故障诊断方法研究/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">四旋翼容错控制及故障诊断方法研究</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+<!-- 多说评论框 start -->
+	　<div class="ds-thread" data-thread-key="2015/03/15/三轴云台控制方案/" data-title="三轴云台控制方案" data-url="crossing.xyz/2015/03/15/三轴云台控制方案/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"crossing"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+</div>
+
+
+
+
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 王晓东
+    	</div>
+		<div class="footer-right">
+    		欢迎来到王晓东的个人网站
+    	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <script src="/js/main.js" type="text/javascript"></script>
+
+
+
+//ǰ��Ҫ���ӵĴ���
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?83a67afd6d56a78166e43f9f28deffcc";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+//����Ҫ���ӵ�  
+//����Ҫ���ӵ�  
+
+  </div>
+</body>
+</html>
